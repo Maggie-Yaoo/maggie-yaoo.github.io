@@ -7,3 +7,6 @@ This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.
 ## Activity 2
 ![](./assets/img/A2-repo.png)
 ![](./assets/img/A2-web.png)
+
+## Activity 3
+![](./assets/img/A3-web.png)
