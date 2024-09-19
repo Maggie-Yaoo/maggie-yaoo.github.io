@@ -108,7 +108,7 @@
         <!-- mdi-av-web small
              mdi-av-my-library-books small-->
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+            class="mdi-av-my-library-books small"></i><span>Recent Projects</span></a>
       </li>
 
       <li class="bold">
@@ -181,8 +181,8 @@
             class="mdi-action-trending-up small"></i><span>Experience</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+        <a aria-label="Navigate to the Recent Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Recent Projects</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
@@ -398,220 +398,128 @@
             <span>May 2022 - August 2022 | North York, ON, Canada</span>
           </div>
         </div>
-
-        <!-- Experience 2 -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <img alt="Mtag logo" src="/assets/img/exp-mtag-logo-250x250.jpg" class="responsive-img center-block" />
-
-              </div> -->
-
-              <!-- <div class="col s12 m10"> -->
-              <!-- <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="#experience" class="teal-text hoverline">Mtag
-                      Innovations</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Software Developer</div>
-            <ul>
-              <li>
-                Programmed a cloud-based web app using Flask and JavaScript aimed at storing, visualizing, and tracking temperature and humidity
-of each drug container to estimate the degradation of the drug.
-              </li>
-              <li>
-                Created an alert system to send notifications and emails when the parameters exceed the threshold.
-              </li>
-              <li>
-                <b>Tools:</b> Python, Flask, JavaScript
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>July 2018 - Nov 2018 | Ahmedabad, India</span>
-          </div>
-        </div> -->
-
-        <!-- Experience 3 -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.cignex.com" target="_blank"><img alt="Cignex logo"
-                    src="/assets/img/exp-cignex-logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.cignex.com" target="_blank"
-                      class="teal-text hoverline">CIGNEX
-                      Datamatics </a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Project Trainee</div>
-            <ul>
-              <li>
-                Designed a library management system for a local library, where we undertook activities like requirement
-                elicitation, preparing Data Flow
-                and Entity-Relationship diagrams.
-              </li>
-              <li>
-                Delivered a solution for a POC involving Automatic Financial Document Classifier using Natural Language
-                Processing and Support Vector
-                Machines with 96% accuracy on the company’s data.
-              </li>
-              <li>
-                <b>Tools:</b> Python, Scikit-learn, NLTK
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>June 2017 - July 2017 | Ahmedabad, India</span>
-          </div>
-        </div> -->
-
       </div>
     </section>
 
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
+      <h3 class="page-title white-text teal">Recent Projects</h3>
       <div class="container">
         <div class="row">
+          <div id="recent-projects" style="display: block;">
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="budgeting app" src="/assets/img/OCR.avif" style="height: 100%; width: 100%" class="activator" />
+          </div>
+
+          <div id="all-projects" style="display: none">
+            <div class="col s12 m6 l4" tag="projects" id="202404">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="budgeting app" src="/assets/img/OCR.avif" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">Budgeting Web-App<i
+                      class="mdi-navigation-more-vert right"></i></span>
+                  <p>
+                    A web application for budget management with automated receipt processing using OCR
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title grey-text"><small>Accomplishments</small><i
+                      class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Upload receipts and automatically extract spending data using OCR</li>
+                    <li>Create and manage multiple budget categories</li>
+                    <li>Integrated an LLM to provide personalized financial advice and budget suggestions</li>
+                    <li><b>Tools:</b> TypeScript, Next.js, Django</li>
+                  </ul>
+                  <div class="card-action">
+                    <!-- <a aria-label="Visit " href="https://github.com/ece496-BEAN" target="_blank" data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                        class="fa fa-external-link"></i></a> -->
+                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/ece496-BEAN"
+                      target="_blank" data-position="top" data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                        class="fa fa-github"></i></a>
+                  </div>
+                </div>
               </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Budgeting Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A web application for budget management with automated receipt processing using OCR
-                </p>
+            </div>
+  
+            <div class="col s12 m6 l4" tag="projects" id="202204">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="delivery app" src="/assets/img/delivery-app.jpeg" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">Optimal Delivery Route Map<i
+                      class="mdi-navigation-more-vert right"></i></span>
+                  <p>
+                    A high-performance map-based application that optimize delivery routes based on pickup and drop off points
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title grey-text"><small>Accomplishments</small><i
+                      class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> C++</li>
+                    <li>Implemented Dijkstra’s, A*, and multi-objective pathfinding algorithms with performance optimized for the
+                      NP-hard salesman problem using 2-opt, 3-opt, and simulated annealing</li>
+                    <li>Utilized the OpenStreetMap API for geographical data and implemented UI features with GTK and EZGL</li>
+                  </ul>
+                </div>
               </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Upload receipts and automatically extract spending data using OCR</li>
-                  <li>Create and manage multiple budget categories</li>
-                  <li>Integrated an LLM to provide personalized financial advice and budget suggestions</li>
-                  <li><b>Tools:</b> TypeScript, Next.js, Django</li>
-                </ul>
-                <div class="card-action">
-                  <!-- <a aria-label="Visit " href="https://github.com/ece496-BEAN" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a> -->
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/ece496-BEAN"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+            </div>
+  
+            <div class="col s12 m6 l4" tag="projects" id="202203">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="car puzzle app" src="/assets/img/car-puzzle.png" style="height: 100%; width: 100%" class="activator" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">Embedded Parking Puzzle<i
+                      class="mdi-navigation-more-vert right"></i></span>
+                  <p>
+                    A ”Rush Hour”-style puzzle game on a DE1-SoC board
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <!-- TODO: change this -- only close button -->
+                  <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                  <span class="card-title grey-text"><small>Accomplishments</small><i
+                      class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><b>Tools:</b> C</li>
+                    <li>Processed user input through a PS/2 mouse and keyboard interface as well as on-board switches</li>
+                    <li>Displayed user interface and smooth animations to a connected VGA monitor</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="delivery app" src="/assets/img/delivery-app.jpeg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Optimal Delivery Route Map<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A high-performance map-based application that optimize delivery routes based on pickup and drop off points
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C++</li>
-                  <li>Implemented Dijkstra’s, A*, and multi-objective pathfinding algorithms with performance optimized for the
-                    NP-hard salesman problem using 2-opt, 3-opt, and simulated annealing</li>
-                  <li>Utilized the OpenStreetMap API for geographical data and implemented UI features with GTK and EZGL</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="car puzzle app" src="/assets/img/car-puzzle.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Embedded Parking Puzzle<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A ”Rush Hour”-style puzzle game on a DE1-SoC board
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C</li>
-                  <li>Processed user input through a PS/2 mouse and keyboard interface as well as on-board switches</li>
-                  <li>Displayed user interface and smooth animations to a connected VGA monitor</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
-                  <li>Users can view list and detail information for books and authors.</li>
-                  <li>Admin users can create and manage models.</li>
-                  <li>Librarians can renew reserved books.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- ************* -->
         </div>
       </div>
+      <script>
+        const link = document.getElementById("recent-projects")
+        const projects = document.getElementsByClassName("col s12 m6 l4")
+  
+        newest = 0
+        for (let i = 0; i < projects.length; i++){
+          if (projects[i].id > projects[newest].id){
+            newest = i;
+          }
+        }
+  
+        link.appendChild(projects[newest]);
+      </script>
+  
+      <button id="show-button" ONCLICK="document.getElementById('show-button').style.display='none'; document.getElementById('all-projects').style.display='block';">
+        <p>Show all projects</p>
+      </button>
     </section>
 
     <!-- Fifth Section: Skills -->
@@ -856,7 +764,7 @@ of each drug container to estimate the degradation of the drug.
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["Pythonist", "Developer", "Fast Learner"],
+      strings: ["Software Engineer", "Fast Learner", "Traveller"],
       loop: true,
       typeSpeed: 80,
       backSpeed: 40
